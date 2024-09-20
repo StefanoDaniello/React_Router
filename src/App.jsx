@@ -1,15 +1,16 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import { ContextProvider } from './store/context'
+import Navbar from './components/Navbar'
 import './App.css'
 
 function App() {
 
   return (
-    <ContextProvider>
-      
-    </ContextProvider>
+    <>
+      <Navbar></Navbar>
+      <h1>Home</h1>
+    </>
   )
 }
 
