@@ -10,10 +10,13 @@ function Navbar (){
                 <Link to={"/prova"}>Prova</Link>
             </li>
             <li>
-                <Link to={"/cards"}>Cards</Link>
+                <Link to={"/cards"}>Cards Normale</Link>
             </li>
             <li>
                 <Link to={"/cards/1"}>Card 1</Link>
+            </li>
+            <li>
+                <Link to={"/cards-children"}>Cards Children</Link>
             </li>
           </ul>
         </nav>

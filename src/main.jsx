@@ -4,6 +4,7 @@ import App from './App.jsx'
 import Prova from './pages/Prova.jsx';
 import Cards from './pages/Cards.jsx';
 import Card from './pages/Card.jsx';
+import CardsChildren from './pages/CardsChildren.jsx';
 import { createBrowserRouter, RouterProvider} from 'react-router-dom';
 import { ContextProvider } from './store/context.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';  
@@ -26,7 +27,17 @@ const router = createBrowserRouter([
   {
     path: "/cards/:cardID",
     element: <Card/>
-  }
+  },
+  {
+    path: "/cards-children",
+    element: <CardsChildren/>,
+    children:[
+      {
+        path: ":cardID",
+        element: <Card/>,
+      },
+    ],
+  },
   
 ])
 
